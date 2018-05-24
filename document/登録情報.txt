@@ -1,0 +1,12 @@
+[yahoo]
+kabudev123@yahoo.co.jp
+kabudev321
+
+[github]
+https://github.com/kabudev/kabu
+kabudev
+kabudev123@yahoo.co.jp
+321kabudev
+
+
+
