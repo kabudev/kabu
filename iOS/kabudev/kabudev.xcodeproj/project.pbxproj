@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25D548A95A48D8F53116F3D0 /* Pods_kabudev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC0372CEB50D23B67ADE0AE /* Pods_kabudev.framework */; };
 		5B3A797420B6E8BD00ED17DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A797320B6E8BD00ED17DB /* AppDelegate.swift */; };
 		5B3A797620B6E8BD00ED17DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A797520B6E8BD00ED17DB /* ViewController.swift */; };
 		5B3A797920B6E8BD00ED17DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A797720B6E8BD00ED17DB /* Main.storyboard */; };
 		5B3A797B20B6E8BE00ED17DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A797A20B6E8BE00ED17DB /* Assets.xcassets */; };
 		5B3A797E20B6E8BE00ED17DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A797C20B6E8BE00ED17DB /* LaunchScreen.storyboard */; };
+		5BDD4E1D20B83AA9003F4951 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD4E1C20B83AA9003F4951 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FC0372CEB50D23B67ADE0AE /* Pods_kabudev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kabudev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F4A76ADBF5EA8BA7A8B7F52 /* Pods-kabudev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kabudev.release.xcconfig"; path = "Pods/Target Support Files/Pods-kabudev/Pods-kabudev.release.xcconfig"; sourceTree = "<group>"; };
 		5B3A797020B6E8BD00ED17DB /* kabudev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kabudev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3A797320B6E8BD00ED17DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B3A797520B6E8BD00ED17DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		5B3A797A20B6E8BE00ED17DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B3A797D20B6E8BE00ED17DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B3A797F20B6E8BE00ED17DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDD4E1C20B83AA9003F4951 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1D8207DCC1EC2D2571B6277 /* Pods-kabudev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kabudev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kabudev/Pods-kabudev.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D548A95A48D8F53116F3D0 /* Pods_kabudev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				5B3A797220B6E8BD00ED17DB /* kabudev */,
 				5B3A797120B6E8BD00ED17DB /* Products */,
+				FF541459659F84AC0A74738A /* Pods */,
+				AE6A415F3CA7F4D8E64638F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				5B3A797A20B6E8BE00ED17DB /* Assets.xcassets */,
 				5B3A797C20B6E8BE00ED17DB /* LaunchScreen.storyboard */,
 				5B3A797F20B6E8BE00ED17DB /* Info.plist */,
+				5BDD4E1C20B83AA9003F4951 /* GoogleService-Info.plist */,
 			);
 			path = kabudev;
+			sourceTree = "<group>";
+		};
+		AE6A415F3CA7F4D8E64638F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FC0372CEB50D23B67ADE0AE /* Pods_kabudev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF541459659F84AC0A74738A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1D8207DCC1EC2D2571B6277 /* Pods-kabudev.debug.xcconfig */,
+				2F4A76ADBF5EA8BA7A8B7F52 /* Pods-kabudev.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B3A798220B6E8BE00ED17DB /* Build configuration list for PBXNativeTarget "kabudev" */;
 			buildPhases = (
+				20CE00CD0C84B91F95893D93 /* [CP] Check Pods Manifest.lock */,
 				5B3A796C20B6E8BD00ED17DB /* Sources */,
 				5B3A796D20B6E8BD00ED17DB /* Frameworks */,
 				5B3A796E20B6E8BD00ED17DB /* Resources */,
+				2C865F17EB9F36779C5FEF6D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +153,57 @@
 			files = (
 				5B3A797E20B6E8BE00ED17DB /* LaunchScreen.storyboard in Resources */,
 				5B3A797B20B6E8BE00ED17DB /* Assets.xcassets in Resources */,
+				5BDD4E1D20B83AA9003F4951 /* GoogleService-Info.plist in Resources */,
 				5B3A797920B6E8BD00ED17DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20CE00CD0C84B91F95893D93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kabudev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C865F17EB9F36779C5FEF6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-kabudev/Pods-kabudev-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kabudev/Pods-kabudev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B3A796C20B6E8BD00ED17DB /* Sources */ = {
@@ -278,10 +353,12 @@
 		};
 		5B3A798320B6E8BE00ED17DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D8207DCC1EC2D2571B6277 /* Pods-kabudev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = kabudev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,10 +372,12 @@
 		};
 		5B3A798420B6E8BE00ED17DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4A76ADBF5EA8BA7A8B7F52 /* Pods-kabudev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = kabudev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
