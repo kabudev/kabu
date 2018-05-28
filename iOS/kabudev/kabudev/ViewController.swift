@@ -16,6 +16,20 @@ class ViewController: UIViewController {
 
         let ref = Database.database().reference()
         
+        let conditionRef = ref.child("condition")
+        conditionRef.observe(.value) { (snap) in
+            
+            let key = snap.key
+            let value = snap.value!
+            print("変更：key = \(key) value = \(value)")
+        }
+        
+        let userIdRef = ref.child("user")
+        userIdRef.observe(.childAdded) { (snap) in
+            let key = snap.key
+            let value = snap.value!
+            print("user追加：key = \(key) value = \(value)")
+        }
 
     }
 
