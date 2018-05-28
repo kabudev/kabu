@@ -9,4 +9,7 @@ kabudev123@yahoo.co.jp
 321kabudev
 
 
+[Firebase]
+hasimoto.kengo
+../T7
 
